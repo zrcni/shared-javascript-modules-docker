@@ -12,6 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "date-fns": "2.14.0",
-    "nodemon": "2.0.4"
+    "nodemon": "2.0.4",
+    "module-alias": "2.2.2"
+  },
+  "_moduleAliases": {
+    "@shared": "../shared"
   }
 }

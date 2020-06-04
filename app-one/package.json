@@ -12,6 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "faker": "4.1.0",
-    "nodemon": "2.0.4"
+    "nodemon": "2.0.4",
+    "module-alias": "2.2.2"
+  },
+  "_moduleAliases": {
+    "@shared": "../shared"
   }
 }
