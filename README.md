@@ -9,6 +9,3 @@ Containers that use these shared modules mount the folders like this:
 \<project-root\>/node_modules - /node_modules   
 
 Applications can install their own npm modules in addition to the npm modules at the project root.
-
-# setup
-
