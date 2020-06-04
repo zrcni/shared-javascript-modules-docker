@@ -11,5 +11,5 @@ app.get("/", (req, res) => {
 })
 
 app.listen(3003, () => {
-  console.log("auth listening on port 3003")
+  console.log("app-two listening on port 3003")
 })
