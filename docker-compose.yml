@@ -7,7 +7,6 @@ services:
     command: "run start"
     volumes:
       - ./app-one:/app
-      - ./node_modules:/node_modules
       - ./shared:/shared
 
   app-two:
@@ -17,5 +16,4 @@ services:
     command: "run start"
     volumes:
       - ./app-two:/app
-      - ./node_modules:/node_modules
       - ./shared:/shared

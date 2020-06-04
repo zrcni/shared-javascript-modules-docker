@@ -1,5 +1,5 @@
 require("module-alias/register")
-const express = require("express")
+const express = require("@shared/node_modules/express")
 const app = express()
 const test = require("@shared/utils/test")
 const faker = require("faker")
