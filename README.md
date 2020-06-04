@@ -24,7 +24,9 @@ RUN addgroup --gid 789 group-name && adduser --disabled-password --gecos "" --no
 ```
 
 ## module aliases
-By default requiring shared modules would be required like this:
+Each application defines their own module aliases, because one application might use JS without any transpilation, another one might use Babel+Webpack and a third one might use TypeScript.   
+
+By default, requiring shared modules would be required like this:
 ```js
 const test = require('../../shared/utils/test')
 ```
@@ -33,4 +35,10 @@ By using module aliases it can be required like this:
 const test = require('@shared/utils/test')
 ```
 
-Each application defines their own module aliases, because one application might use JS without any transpilation, another one might use Babel+Webpack and a third one might use TypeScript.
+## Alternative shared node modules
+Shared node modules can be installed inside the **shared** folder. This way you wouldn't have to mount node_modules in each container, but requiring node modules from the shared folder would have to be done explicitly like this:
+```js
+const express = require('@shared/node_modules/express')
+```
+
+This is implemented in the branch **node-modules-in-shared-dir**.
