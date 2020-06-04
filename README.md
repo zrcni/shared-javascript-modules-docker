@@ -26,7 +26,7 @@ RUN addgroup --gid 789 group-name && adduser --disabled-password --gecos "" --no
 ## module aliases
 Each application defines their own module aliases, because one application might use JS without any transpilation, another one might use Babel+Webpack and a third one might use TypeScript.   
 
-By default, requiring shared modules would be required like this:
+By default, requiring shared modules would be done like this:
 ```js
 const test = require('../../shared/utils/test')
 ```
