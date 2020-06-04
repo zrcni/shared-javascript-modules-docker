@@ -1,0 +1,21 @@
+version: "3.2"
+services:
+  app-one:
+    build: ./app-one
+    ports:
+      - 3000:3000
+    command: "run start"
+    volumes:
+      - ./app-one:/app
+      - ./node_modules:/node_modules
+      - ./shared:/shared
+
+  app-two:
+    build: ./app-two
+    ports:
+      - 3003:3003
+    command: "run start"
+    volumes:
+      - ./app-two:/app
+      - ./node_modules:/node_modules
+      - ./shared:/shared
